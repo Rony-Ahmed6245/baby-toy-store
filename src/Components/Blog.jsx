@@ -16,7 +16,9 @@ const Blog = () => {
 
                     <div className='p-2 space-y-3'>
                         <h1 className='text-center text-xl text-[#FC82BD]'>Tinytots Gift Pack for birthdays</h1>
-                        <h1 className='text-center text-md mt-3 text-gray-400 p-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, necessitatibus eos sapiente commodi tempora exercitationem ipsam alias qui ullam iusto soluta ab ipsum facere eius laudantium natus rem,</h1>
+                        <h1 className='text-center text-md mt-3 text-gray-400 p-2 text-justify'>
+                            Cold can help numb sore gums and provide relief. Try giving your baby a teething toy that has been chilled in the refrigerator (not frozen). The cold sensation can soothe the pain and provide a distraction.
+                        </h1>
 
                         <div className='flex justify-between items-center gap-4 px-2'>
                             <button className='btn bg-[#FEEB26]'>Read More</button>
@@ -29,7 +31,7 @@ const Blog = () => {
 
                     <div className='p-2  space-y-3'>
                         <h1 className='text-center text-xl text-[#FC82BD]'>Tinytots Gift Pack for birthdays</h1>
-                        <h1 className='text-center text-md mt-3 text-gray-400 p-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, necessitatibus eos sapiente commodi tempora exercitationem ipsam alias qui ullam iusto soluta ab ipsum facere eius laudantium natus rem,</h1>
+                        <h1 className='text-center text-md mt-3 text-gray-400 p-2 text-justify'> Use clean fingers or a soft, damp cloth to gently massage your baby's gums. This can help alleviate some of the pressure and discomfort caused by teething. Offer Cold Foods</h1>
 
                         <div className='flex justify-between items-center gap-4 px-2'>
                             <button className='btn bg-[#FEEB26]'>Read More</button>
@@ -42,7 +44,7 @@ const Blog = () => {
 
                     <div className='p-2  space-y-3'>
                         <h1 className='text-center text-xl text-[#FC82BD]'>Tinytots Gift Pack for birthdays</h1>
-                        <h1 className='text-center text-md mt-3 text-gray-400 p-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, necessitatibus eos sapiente commodi tempora exercitationem ipsam alias qui ullam iusto soluta ab ipsum facere eius laudantium natus rem,</h1>
+                        <h1 className='text-center text-md mt-3 text-gray-400 p-2 text-justify'>Some parents find that natural remedies like chamomile tea or clove oil can help soothe teething discomfort. However, it's essential to consult with your pediatrician before </h1>
 
                         <div className='flex justify-between items-center gap-4 px-2'>
                             <button className='btn bg-[#FEEB26]'>Read More</button>

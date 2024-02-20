@@ -4,6 +4,7 @@ import BabyBox from '../Components/BabyBox';
 import Blog from '../Components/Blog';
 import Carusel from '../Components/Carusel';
 import FeatureProducts from '../Components/FeatureProducts';
+import Footer from '../Components/Footer';
 import Service from '../Components/Service';
 
 
@@ -12,17 +13,12 @@ import Service from '../Components/Service';
 const Home = () => {
     return (
         <div>
-            {/* banner carusel section */}
             <Carusel></Carusel>
-            {/* babybox section  */}
             <BabyBox></BabyBox>
-
-            {/* feature products  */}
             <FeatureProducts></FeatureProducts>
-            {/* blog  */}
             <Blog></Blog>
             <Service></Service>
-
+            <Footer></Footer>
         </div>
     );
 };

@@ -11,6 +11,8 @@ const Carusel = () => {
             <Carousel
                 autoPlay
                 interval
+                infiniteLoop
+
                 className="text-center"
             >
                 <div className="relative">

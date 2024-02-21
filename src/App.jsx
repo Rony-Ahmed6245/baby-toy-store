@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom"
-
+import logo from '../src/assets/logo.avif'
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
 
             <div className="w-full navbar max-w-7xl px-2 mx-auto">
               <div className="flex-1 px-2 mx-2">
-                <img className="w-[140px]" src="../src/assets/logo.avif" alt="" />
+                <img className="w-[140px]" src={logo} alt="BABY CARE" />
               </div>
               <div className="flex-none hidden lg:block">
                 <ul className=" ">

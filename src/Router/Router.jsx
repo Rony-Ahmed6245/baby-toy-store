@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import AddProduct from '../pages/AddProduct';
 import MyCart from '../pages/MyCart';
 import Login from '../pages/Login';
+import ProductDetal from '../pages/ProductDetal';
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
+                loader:()=> fetch('http://localhost:3000/v1/babyProducts')
             },
             {
                 path:'/addProduct',
@@ -28,6 +30,11 @@ const router = createBrowserRouter([
             {
                 path:'/login',
                 element:<Login></Login>,
+            },
+            {
+                path:'/v1/productDetail/:id',
+                element:<ProductDetal></ProductDetal>,
+                loader:()=> fetch('http://localhost:3000/v1/babyProducts')
             }
         ]
     }

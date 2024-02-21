@@ -9,9 +9,9 @@ const Carusel = () => {
     return (
         <div>
             <Carousel
-                autoPlay
-                interval
-                infiniteLoop
+                // autoPlay
+                // interval
+                
 
                 className="text-center"
             >

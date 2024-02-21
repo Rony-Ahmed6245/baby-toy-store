@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <div className='bg-[#69BFF1]'>
-            <footer className="footer grid grid-cols-2 md:grid-cols-3 p-10  max-w-7xl mx-auto px-10 text-black">
+        <div className='bg-[#FC82BD]'>
+            <footer className="footer grid grid-cols-2 md:grid-cols-3 p-10  max-w-7xl mx-auto px-10 text-white">
                 <nav>
                     <h6 className="footer-title">Services</h6>
                     <a className="link link-hover">Branding</a>

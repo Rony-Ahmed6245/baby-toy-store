@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { Link, NavLink, Outlet } from "react-router-dom"
 import logo from '../src/assets/logo.avif'
 import { useContext, useState } from "react"
 import { AuthContext } from "./Provider/AuthProvider"
@@ -54,7 +54,8 @@ function App() {
 
             <div className="w-full navbar max-w-7xl px-2 mx-auto gap-3 md:gap-5">
               <div className="flex-1 px-2 mx-2">
-                <img className="w-[140px]" src={logo} alt="BABY CARE" />
+                <Link to={'/'}><img className="w-[140px]" src={logo} alt="BABY CARE" /></Link>
+               
               </div>
               <div className="flex-none hidden lg:block">
                 <ul className=" ">

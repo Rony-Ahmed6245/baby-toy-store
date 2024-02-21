@@ -14,6 +14,10 @@ const MyCart = () => {
     const filterItem = data?.filter(item => item?.userEmail == user?.email)
     console.log(filterItem);
 
+    const totalPrice = filterItem?.reduce((acc, item) => Number(acc) + Number(item.price), 0);
+console.log(totalPrice);
+
+    
     return (
         <div>
             <div className="bg-gray-100 h-screen py-8">
@@ -72,7 +76,7 @@ const MyCart = () => {
 
                                 <div className="flex justify-between mb-2">
                                     <span className="font-semibold">Total</span>
-                                    <span className="font-semibold">$00.00</span>
+                                    <span className="font-semibold">${totalPrice}.00</span>
                                 </div>
                                 <button className="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</button>
                             </div>

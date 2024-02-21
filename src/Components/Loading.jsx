@@ -2,8 +2,8 @@
 
 const Loading = () => {
     return (
-        <div>
-            loading
+        <div className="max-w-7xl mx-auto ">
+           Loading
         </div>
     );
 };

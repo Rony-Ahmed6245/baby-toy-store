@@ -19,7 +19,7 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:()=> fetch('http://localhost:3000/v1/babyProducts')
+                loader:()=> fetch('https://baby-server-six.vercel.app/v1/babyProducts')
             },
             {
                 path:'/addProduct',
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
             {
                 path:'/myCart',
                 element:<MyCart></MyCart>,
-                loader:()=> fetch('http://localhost:3000/v1/cartProducts')
+                loader:()=> fetch('https://baby-server-six.vercel.app/v1/cartProducts')
             },
             {
                 path:'/login',
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
             {
                 path:'/v1/productDetail/:id',
                 element:<PrivateRoute><ProductDetal></ProductDetal></PrivateRoute>,
-                loader:()=> fetch('http://localhost:3000/v1/babyProducts')
+                loader:()=> fetch('https://baby-server-six.vercel.app/v1/babyProducts')
             }
         ]
     }

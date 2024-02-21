@@ -17,7 +17,7 @@ const AddProduct = () => {
         const formData = { name, img, rating, price, brand, dsc };
         console.log(formData);
 
-        fetch("http://localhost:3000/v1/babyProduct", {
+        fetch("https://baby-server-six.vercel.app/v1/babyProduct", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

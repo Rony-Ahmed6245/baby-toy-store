@@ -25,7 +25,7 @@ const ProductDetal = () => {
         const userEmail = user.email;
         console.log(userEmail);
         console.log({ ...filterData, userEmail });
-        fetch("http://localhost:3000/v1/addtocart", {
+        fetch("https://baby-server-six.vercel.app/v1/addtocart", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

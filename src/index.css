@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 /* add products  */
+.profile{
+    list-style: none;
+    /* margin: 10px; */
+}

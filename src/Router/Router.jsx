@@ -7,6 +7,7 @@ import AddProduct from '../pages/AddProduct';
 import MyCart from '../pages/MyCart';
 import Login from '../pages/Login';
 import ProductDetal from '../pages/ProductDetal';
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/addProduct',
-                element:<AddProduct></AddProduct>,
+                element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
             },
             {
                 path:'/myCart',
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/v1/productDetail/:id',
-                element:<ProductDetal></ProductDetal>,
+                element:<PrivateRoute><ProductDetal></ProductDetal></PrivateRoute>,
                 loader:()=> fetch('http://localhost:3000/v1/babyProducts')
             }
         ]

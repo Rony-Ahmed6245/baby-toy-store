@@ -6,7 +6,7 @@ import Swal from "sweetalert2"
 
 function App() {
   const { user, logOut } = useContext(AuthContext)
-  console.log(user, logOut);
+  // console.log(user, logOut);
   const [showDropdown, setShowDropdown] = useState(false);
 
 

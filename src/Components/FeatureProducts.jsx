@@ -5,7 +5,7 @@ import ReactStars from "react-rating-stars-component";
 
 const FeatureProducts = () => {
     const data = useLoaderData([])
-    console.log(data);
+    // console.log(data);
 
 
     return (

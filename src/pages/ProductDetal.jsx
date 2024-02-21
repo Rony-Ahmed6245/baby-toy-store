@@ -1,18 +1,47 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
+import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const ProductDetal = () => {
     const data = useLoaderData([])
     // console.log(data);
-
+    const { user } = useContext(AuthContext)
+    // console.log(user.email);
     const { id } = useParams()
     // console.log(id);
 
     const filterData = data?.find(item => item._id === id)
-    console.log(filterData);
+    // console.log(filterData);
 
     const { name, price, rating, brand, dsc, img } = filterData || {};
+    // console.log(filterData);
 
+    const handelAddTocart = () => {
+
+
+        const { name, price, rating, brand, dsc, img } = filterData;
+        const userEmail = user.email;
+        console.log(userEmail);
+        console.log({ ...filterData, userEmail });
+        fetch("http://localhost:3000/v1/addtocart", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ ...filterData, userEmail }),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                Swal.fire("Added successfully");
+            })
+            .catch(error => {
+                console.error("Add to Cart Error:", error);
+                Swal.fire("Already added the product choose Another");
+            });
+    }
 
     return (
         <div>
@@ -41,7 +70,7 @@ const ProductDetal = () => {
                                             {/* rating  */}
                                             <ReactStars
                                                 count={rating}
-                                               
+
                                                 size={24}
                                                 isHalf={true}
                                                 emptyIcon={<i className="far fa-star"></i>}
@@ -82,7 +111,7 @@ const ProductDetal = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap items-center -mx-4 ">
-                                    <div className="w-full px-4 mb-4 lg:w-1/2 lg:mb-0">
+                                    <div onClick={handelAddTocart} className="w-full px-4 mb-4 lg:w-1/2 lg:mb-0">
                                         <button
                                             className="btn bg-[#FEEB26] w-full text-md font-bold">
                                             Add to Cart

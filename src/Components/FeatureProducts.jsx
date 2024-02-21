@@ -18,7 +18,7 @@ const FeatureProducts = () => {
             {/* products   */}
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10">
 
-                {data.map(item => (
+                {data?.map(item => (
                     <Link to={`/v1/productDetail/${item._id}`} key={item._id} className='shadow hover:shadow-2xl  rounded'>
                         <img src={item.img} alt="" />
                         <hr />

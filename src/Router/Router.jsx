@@ -9,6 +9,7 @@ import Login from '../pages/Login';
 import ProductDetal from '../pages/ProductDetal';
 import PrivateRoute from './PrivateRoute';
 
+
 const router = createBrowserRouter([
     {
         path:'/',
@@ -26,7 +27,8 @@ const router = createBrowserRouter([
             },
             {
                 path:'/myCart',
-                element:<MyCart></MyCart>
+                element:<MyCart></MyCart>,
+                loader:()=> fetch('http://localhost:3000/v1/cartProducts')
             },
             {
                 path:'/login',

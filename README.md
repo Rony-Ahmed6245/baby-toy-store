@@ -3,8 +3,8 @@
 <h1>Assignment ID: assignment_category_0003</h1>
   <h3 align="center">---All necessary links ---</h3>      
 Website live link: https://baby-toy-store-8b94f.web.app/ </br>
-Client Side github link: https://github.com/Rony-Ahmed6245/baby-toy-store-server.git </br>
-Server side github link: https://github.com/Rony-Ahmed6245/baby-toy-store.git</br>
+Client Side github link: https://github.com/Rony-Ahmed6245/baby-toy-store.git  </br>
+Server side github link: https://github.com/Rony-Ahmed6245/baby-toy-store-server.git</br>
 </h1>
    <h3 align="center">---Used Technology ---</h3>  
              1.React <br>
@@ -20,10 +20,10 @@ Server side github link: https://github.com/Rony-Ahmed6245/baby-toy-store.git</b
 <br>
            
    <h3 align="center">---Project features ---</h3> 
-            <img src="https://i.ibb.co/Xj4JJg1/Screenshot-2023-11-08-211136.png" alt="" />
+            <img src="https://i.ibb.co/c1SZZGk/Vite-React-1.png" alt="" />
             <h1>Add at least 5 Project features in my job portal website</h1>
             <h3>1/Feature: Website future job section </h3>
-            <img src="https://i.ibb.co/SvwVR23/Screenshot-2023-11-08-212019.png" alt="" />
+            <img src="https://i.ibb.co/fXh08jg/Screenshot-2024-02-22-080222.png" alt="" />
             <p>Creating a compelling "Future Jobs" section on a website can provide valuable insights into emerging career opportunities and trends. Here are some content ideas for such a section:Career Profiles: Provide in-depth profiles of individuals who hold jobs that are likely to be in high demand in the future. Include their background, education, daily responsibilities, and insights into the industry.Industry Insights: Write articles or reports about industries that are expected to grow significantly. Explain why these industries are on the rise and what types of jobs they will create.</p>
                <hr/> 
             <h3><span>2/Features:</span>Our website client feedback section </h3>
